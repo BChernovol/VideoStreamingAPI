@@ -102,3 +102,8 @@ For easy testing of the API, a Postman collection and sample content are include
 3. Select the `VideoStreamingAPI.postman_collection.json` file from the resources folder.
 4. Use the predefined API requests to test the service.
 
+## Results
+![img_1.png](src/main/resources/results/img_1.png)
+![img_2.png](src/main/resources/results/img_2.png)
+![img_3.png](src/main/resources/results/img_3.png)
+
