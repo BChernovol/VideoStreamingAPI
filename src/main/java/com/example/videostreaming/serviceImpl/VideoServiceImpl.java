@@ -157,5 +157,4 @@ public class VideoServiceImpl implements VideoService {
     private VideoEngagement findVideoEngagementByVideoId(Video video) {
         return videoEngagementRepository.findByVideoId(video.getId());
     }
-
 }

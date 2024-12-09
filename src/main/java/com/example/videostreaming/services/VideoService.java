@@ -8,7 +8,6 @@ import java.io.InputStream;
 import java.util.List;
 
 public interface VideoService {
-
     Video publishVideo(MultipartFile file);
     void deleteVideoWithRelatedMetadata(Long id);
     Video loadVideoById(Long id);
