@@ -1,4 +1,4 @@
-package com.example.videostreaming.conrtollers;
+package com.example.videostreaming.controllers;
 
 import com.example.videostreaming.dto.VideoMetadataDTO;
 import com.example.videostreaming.entity.Video;

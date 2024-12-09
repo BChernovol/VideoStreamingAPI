@@ -1,4 +1,4 @@
-package com.example.videostreaming.conrtollers;
+package com.example.videostreaming.controllers;
 
 import com.example.videostreaming.dto.ModelError;
 import com.example.videostreaming.exception.EmptyVideoContentException;
