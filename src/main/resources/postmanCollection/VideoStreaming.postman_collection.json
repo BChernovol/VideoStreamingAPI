@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "a73348ab-4623-4f4f-b754-e16a1029050d",
+		"name": "VideoStreaming",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24298670"
+	},
+	"item": [
+		{
+			"name": "PublishVideo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1efb49ba-eafe-4bb0-a641-73c324fe8206"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/video/publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"video",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddMetaDataById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Avatar\",\n    \"synopsis\": \"A mind-bending thriller about dream manipulation.\",\n    \"director\": \"Christopher Nolan\",\n    \"actor\": \"Leonardo DiCaprio\",\n    \"yearOfRelease\": 2090,\n    \"genre\": \"Science Fiction\",\n    \"runningTime\": 148,\n    \"isActive\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/video/updateMetadata/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"video",
+						"updateMetadata",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SoftDeletedById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/video/softDeleteVideo/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"video",
+						"softDeleteVideo",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LoadVideoById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PlayVideoById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/video/video/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"video",
+						"video",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllAvailableVideos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/video/getAllAvailableVideos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"video",
+						"getAllAvailableVideos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVideosByParameteDirector",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/video/getVideoByDirector/Christopher Nolan",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"video",
+						"getVideoByDirector",
+						"Christopher Nolan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

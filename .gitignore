@@ -1,0 +1,15 @@
+.idea
+*.log
+*.iml
+target
+.classpath
+.settings
+.project
+/*.iml
+/gpi-backoffice/backoffice.iml
+*/bin/*
+/.metadata/
+.DS_Store
+.docker/**/*.war
+gpi-backoffice/src/main/webapp/media/js/libs/*
+
